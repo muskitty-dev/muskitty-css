@@ -1,0 +1,24 @@
+[package]
+name = "muskitty-css"
+version = "0.4.0"
+edition = "2021"
+description = "CSS Syntax Module Level 3 tokenizer and parser for Rust"
+license = "Apache-2.0"
+repository = "https://github.com/muskitty-dev/muskitty-css"
+homepage = "https://github.com/muskitty-dev/muskitty-css"
+documentation = "https://docs.rs/muskitty-css"
+authors = ["MusCat / MusKitty Bit-Torch Community"]
+readme = "README.md"
+keywords = ["css", "parser", "syntax", "tokenizer", "web"]
+categories = ["parser-implementations", "web-programming"]
+rust-version = "1.82"
+
+[dependencies]
+muskitty-css-tokenizer = { path = "../muskitty-css-tokenizer", version = "0.1.0" }
+muskitty-css-parser = { path = "../muskitty-css-parser", version = "0.1.0" }
+
+# 防止被父 workspace (D:\Muskitty\Cargo.toml) 误吸入。
+# muskitty-css 作为独立 git 仓库剥离，有自己的 workspace 根。
+[workspace]
+
+[dev-dependencies]

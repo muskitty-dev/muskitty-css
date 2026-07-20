@@ -1,5 +1,7 @@
 # muskitty-css
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 A from-scratch implementation of the [CSS Syntax Module Level 3][spec]
 tokenizer and parser in safe Rust. Facade crate that re-exports
 [`muskitty-css-tokenizer`][tok] and [`muskitty-css-parser`][par] for
